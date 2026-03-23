@@ -12,6 +12,31 @@ Check your Java version:
 java -version
 ```
 
+## Project Structure
+
+```
+chess-game/
+├── README.md
+├── out/                        ← compiled class files
+└── src/
+    ├── board/
+    │   ├── Board.java          ← 8x8 board, move execution, check/checkmate
+    │   └── Position.java       ← row/col representation, notation conversion
+    ├── pieces/
+    │   ├── Piece.java          ← abstract base class for all pieces
+    │   ├── Pawn.java
+    │   ├── Rook.java
+    │   ├── Knight.java
+    │   ├── Bishop.java
+    │   ├── Queen.java
+    │   └── King.java
+    ├── game/
+    │   ├── Game.java           ← main game loop, turn management
+    │   └── Player.java         ← input handling, move validation
+    └── utils/
+        └── Utils.java          ← utility helpers (reserved for future use)
+```
+
 ## How to Compile
 
 From the root of the repository:
