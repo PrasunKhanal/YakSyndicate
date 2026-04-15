@@ -1,15 +1,21 @@
-# Chess Game GUI — YakSyndicate
+Chess Game GUI — YakSyndicate
+Submission: Phase 2 (Second Submission)
 
-A Swing-based two-player chess GUI (Phase 2) built on top of the Phase 1 console version.
+Project: Chess Game GUI
 
-## Environment & Dependencies
-- Java OpenJDK 21 (Linux 64-bit)
-- No external libraries required
+This project is a Swing-based two-player chess GUI, building upon the foundational logic established in the Phase 1 console version.
+
+Environment & Dependencies
+Java: OpenJDK 21 (Linux 64-bit)
+
+Libraries: None (Standard Java Swing/AWT only)
 
 Check Java version:
-java -version
 
-## Project Structure
+Bash
+java -version
+Project Structure
+Plaintext
 chess-game-gui/
 ├── README.md
 ├── out/
@@ -26,36 +32,45 @@ chess-game-gui/
         ├── SettingsDialog.java
         ├── GameWindow.java
         └── Main.java
-
-## How to Compile
+How to Compile
+Bash
 mkdir -p chess-game-gui/out
 javac -d chess-game-gui/out chess-game-gui/src/model/*.java chess-game-gui/src/gui/*.java
-
-## How to Run
+How to Run
+Bash
 java -cp chess-game-gui/out gui.Main
+Features
+Core (Phase 2 Requirements)
+8x8 Chessboard: Rendered using Java Swing.
 
-## Features
+Unicode Rendering: Pieces displayed using standard Unicode chess symbols.
 
-### Core (Phase 2 Requirements)
-- 8x8 chessboard rendered using Java Swing
-- Pieces displayed using Unicode chess symbols
-- Click-to-move and drag-and-drop support
-- Turn-based movement (White vs Black)
-- Capture logic (pieces removed when captured)
-- King capture triggers endgame popup
+Interaction: Full click-to-move and drag-and-drop support.
 
-### Extra Features Implemented
-- Menu Bar (New Game, Save Game, Load Game, Quit)
-- Game History Panel:
-  - Move log displayed in real time
-  - Captured pieces tracked and displayed
-  - Undo functionality
-- Settings Window:
-  - Customize board colors (light/dark squares)
-  - Adjustable board size (small/medium/large)
+Game State: Turn-based movement (White vs Black) with capture logic.
 
-## Notes
-- No strict move validation (per Phase 2 scope)
-- Game ends when a King is captured
-- Save/Load uses Java serialization (.chess files)
+Endgame: King capture triggers a declaration of the winner via popup.
 
+Extra Features Implemented
+Menu Bar: Includes New Game, Save Game, Load Game, and Quit functionality.
+
+Game History Panel:
+
+Real-time move logging.
+
+Captured pieces tracker.
+
+Undo functionality.
+
+Settings Window:
+
+Customizable board color schemes (light/dark squares).
+
+Adjustable board UI scaling (Small/Medium/Large).
+
+Notes
+Validation: This phase does not include strict move validation (ruleset enforcement).
+
+Endgame: The game terminates when a King is captured.
+
+Persistence: Save/Load functionality utilizes Java serialization with .chess file extensions.
