@@ -75,4 +75,4 @@ java -cp chess-game-gui/out gui.Main
 - Validation: This phase does not include strict move validation (ruleset enforcement).
 - Endgame: The game terminates when a King is captured.
 - Persistence: Save/Load functionality utilizes Java serialization with `.chess` file extensions.
-```
+
