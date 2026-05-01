@@ -14,27 +14,30 @@ Check your Java version:
 java -version
 ```
 
-## Project Structure
+##Project Structure
+
+```
 chess-game-phase3/
 ├── README.md
 ├── AI_LOG.md
 ├── out/
 └── src/
-├── model/
-│   ├── PieceType.java
-│   ├── PieceColor.java
-│   ├── Piece.java
-│   ├── BoardModel.java
-│   └── MoveValidator.java
-├── ai/
-│   └── ChessAI.java
-└── gui/
-├── BoardSettings.java
-├── BoardPanel.java
-├── HistoryPanel.java
-├── SettingsDialog.java
-├── GameWindow.java
-└── Main.java
+    ├── model/
+    │   ├── PieceType.java
+    │   ├── PieceColor.java
+    │   ├── Piece.java
+    │   ├── BoardModel.java
+    │   └── MoveValidator.java
+    ├── ai/
+    │   └── ChessAI.java
+    └── gui/
+        ├── BoardSettings.java
+        ├── BoardPanel.java
+        ├── HistoryPanel.java
+        ├── SettingsDialog.java
+        ├── GameWindow.java
+        └── Main.java
+```
 
 ## How to Compile
 ```bash
